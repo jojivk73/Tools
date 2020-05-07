@@ -42,9 +42,7 @@ Shows the following.
              -level 5  \
              -netron 
 ```
-This writes out the subgraph to /tmp dir and calls netron. 
-The output looks as
+Shos the following
 [fig3](https://github.com/jojivk73/Tools/tree/master/pbsubgraph/example3.png) .
-
-You can navigate netron for these nodes for attributes
+This writes the subgraph to /tmp dir and invokes netron. So you can navigate netron for these nodes for attributes.
 
