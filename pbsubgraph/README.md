@@ -4,35 +4,45 @@ This is simple tool that plots subgraphs from pbtxt and pb files. This is especi
 
 ## Example Usage :
   1. TO see all options
-   `> python pbsubgraph.py`
+   ```
+   > python pbsubgraph.py
+   ```
   The ouput looks like below
-   `python <script>
+   ```
+   python <script>
 		 -pbtxt <filename>  (pbtxt filename)
 		 -pb    <filename>  (pb file name) 
 		 -node  <nodename>  (Name of the sub node to show)
 		 -level <levelno>   (recursive level to which show graph)
 		 -gen_pbtxt <fname> (Generates pb file for subgraph)
                  -netron            (Generates subgrapb pbtxt and calls netron)
-		 -stripname         (Strips long names in the box)`
+		 -stripname         (Strips long names in the box)
+   ```
 
   2. To see a node upto 3 level(default) of fanin and fanout neighbors.
-   `> python pbsubgraph.py -pbtxt graph.pbtxt -node bert/encoder/layer_1/attention/output/dense/MatMul```
-     Shows the following.
+```
+   > python pbsubgraph.py -pbtxt graph.pbtxt -node bert/encoder/layer_1/attention/output/dense/MatMul
+```
+Shows the following.
      [fig1](https://github.com/jojivk73/Tools/tree/master/pbsubgraph/example1.png)
   
   3. The above default options show the full name of each node. 
      So the graph can be big.To stip the long name add -stripname option
-     ```> python pbsubgraph.py -pbtxt graph.pbtxt -node bert/encoder/layer_1/attention/output/dense/MatMul```
-     Shows the following.
+```
+     > python pbsubgraph.py -pbtxt graph.pbtxt -node bert/encoder/layer_1/attention/output/dense/MatMul
+```
+Shows the following.
      [fig2](https://github.com/jojivk73/Tools/tree/master/pbsubgraph/example2.png)
 
   3. To see a node in netron upto 5 levels
-   ```> python pbsubgraph.py \
+```
+     > python pbsubgraph.py \
              -pbtxt graph.pbtxt \
              -node bert/encoder/layer_1/attention/output/dense/MatMul \
              -level 5  \
-             -netron ```
-      This writes out the subgraph to /tmp dir and calls netron. The output looks as
-      [fig3](https://github.com/jojivk73/Tools/tree/master/pbsubgraph/example3.png)
-      you can navigate netron for these nodes for attributes
+             -netron 
+```
+Shos the following
+[fig3](https://github.com/jojivk73/Tools/tree/master/pbsubgraph/example3.png) .
+This writes the subgraph to /tmp dir and invokes netron. So you can navigate netron for these nodes for attributes.
 
