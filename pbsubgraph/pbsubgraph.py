@@ -190,6 +190,7 @@ def show_help():
          "\n\t\t -node  <nodename>  (Name of the sub node to show)"
          "\n\t\t -level <levelno>   (recursive level to which show graph)"
          "\n\t\t -gen_pbtxt <fname> (Generates pb file for subgraph)"
+         "\n\t\t -netron            (Generates subgrapb pbtxt and calls netron)"
          "\n\t\t -stripname         (Strips long names in the box)")
   exit(1)
 
