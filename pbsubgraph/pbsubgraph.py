@@ -126,7 +126,7 @@ def show_node(g, n1, nodes, descs, clr="green"):
     dtype =sdata[0] 
     note = "{<f0>" + nodes[n1] + " | <f1> " + dtype + "}" 
     nlab = " |<f2> "
-    if not stripname and pbfile:
+    if not stripname :
       note +=nlab + str(n1) 
       nlab = " |<f3> "
     if pbfile and len(sdata) >= 3 :
