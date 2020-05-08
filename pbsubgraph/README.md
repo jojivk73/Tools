@@ -44,5 +44,5 @@ Shows.
 ```
 Shows 
 [fig3](https://github.com/jojivk73/Tools/tree/master/pbsubgraph/example3.png) .
-This writes the subgraph to /tmp dir and invokes netron. So you can navigate netron for these nodes for attributes.
+This writes the subgraph to /tmp dir and invokes netron. So you can navigate netron for these nodes to check attributes.
 
