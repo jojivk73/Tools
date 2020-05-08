@@ -1,9 +1,9 @@
 # Subgraph
 
-This is simple tool that plots subgraphs from pbtxt and pb files. This is especially useful for graphs that a too large to open in current graphvisualization tools like [Netron](https://github.com/lutzroeder/netron). By default it creates a subgraph using dot and graphviz. It has option to open the subgraph in Netron
+This is simple tool that plots subgraphs from pbtxt and pb files. This is  useful for graphs that are too large to open in current visualization tools like [Netron](https://github.com/lutzroeder/netron). By default it creates a subgraph using dot and graphviz. It has an option to open the subgraph in Netron
 
 ## Example Usage :
-  1. TO see all options
+  1. To see all options
    ```
    > python pbsubgraph.py
    ```
@@ -21,7 +21,9 @@ This is simple tool that plots subgraphs from pbtxt and pb files. This is especi
 
   2. To see a node upto 3 level(default) of fanin and fanout neighbors.
 ```
-   > python pbsubgraph.py -pbtxt graph.pbtxt -node bert/encoder/layer_0/attention/self/MatMul_1
+   > python pbsubgraph.py  \
+          -pbtxt graph.pbtxt  \
+	  -node bert/encoder/layer_0/attention/self/MatMul_1
 ```
 Shows.
      [fig1](https://github.com/jojivk73/Tools/tree/master/pbsubgraph/example1.png)
@@ -29,7 +31,10 @@ Shows.
   3. The above default options show the full name of each node. 
      The graph generated can be big.To stip the long name use the -stripname option
 ```
-     > python pbsubgraph.py -pbtxt graph.pbtxt -node bert/encoder/layer_1/attention/output/dense/MatMul -stripname
+     > python pbsubgraph.py  \
+         -pbtxt graph.pbtxt  \
+	 -node bert/encoder/layer_1/attention/output/dense/MatMul 
+	 -stripname
 ```
 Shows.
      [fig2](https://github.com/jojivk73/Tools/tree/master/pbsubgraph/example2.png)
