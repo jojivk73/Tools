@@ -23,7 +23,7 @@ This is simple tool that plots subgraphs from pbtxt and pb files. This is especi
 ```
    > python pbsubgraph.py -pbtxt graph.pbtxt -node bert/encoder/layer_1/attention/output/dense/MatMul
 ```
-Shows the following.
+Shows.
      [fig1](https://github.com/jojivk73/Tools/tree/master/pbsubgraph/example1.png)
   
   3. The above default options show the full name of each node. 
@@ -31,7 +31,7 @@ Shows the following.
 ```
      > python pbsubgraph.py -pbtxt graph.pbtxt -node bert/encoder/layer_1/attention/output/dense/MatMul
 ```
-Shows the following.
+Shows.
      [fig2](https://github.com/jojivk73/Tools/tree/master/pbsubgraph/example2.png)
 
   3. To see a node in netron upto 5 levels
@@ -42,7 +42,7 @@ Shows the following.
              -level 5  \
              -netron 
 ```
-Shos the following
+Shows 
 [fig3](https://github.com/jojivk73/Tools/tree/master/pbsubgraph/example3.png) .
 This writes the subgraph to /tmp dir and invokes netron. So you can navigate netron for these nodes for attributes.
 
